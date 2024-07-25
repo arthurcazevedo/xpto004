@@ -1,4 +1,4 @@
-interface Props {
+export interface Props {
   /**
    * @description The description of name.
    */
