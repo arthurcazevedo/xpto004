@@ -1,4 +1,8 @@
 {
   "__resolveType": "site/sections/PersonSection.tsx",
-  "id": "11"
+  "id": "11",
+  "rs": {
+    "__resolveType": "site/loaders/PersonLoader.ts",
+    "id": "11"
+  }
 }

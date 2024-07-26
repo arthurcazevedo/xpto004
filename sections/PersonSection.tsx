@@ -1,4 +1,4 @@
-import { Row } from "https://esm.sh/@libsql/client@0.6.0/web";
+import { ResultSet }      from "https://esm.sh/@libsql/client@0.6.0/web";
 import { rs as RS } from "site/loaders/PersonLoader.ts"
 
 export interface Props {
@@ -26,7 +26,7 @@ export default function Section({id, rs}: Props) {
       id="Person"
       class="container py-10 flex flex-col h-screen w-full items-center justify-center gap-16"
     >
-      <p>{rs.rows.map((row:Row) => {row})}</p>
+      <p>{ (rs as ResultSet).rows.map((row) => {row.GIVENNAME})}</p>
     </div>
   );
 }
