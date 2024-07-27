@@ -7,4 +7,4 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 /vercel/.deno/bin/deno install --unstable --allow-read --allow-write --allow-net https://deno.land/x/pagic/mod.ts
 
 # Pagic build
-/vercel/.deno/
+/vercel/.deno/bin/deno run --unstable --allow-read --allow-write --allow-net --allow-env --allow-run https://deno.land/x/pagic/mod.ts build
