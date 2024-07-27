@@ -26,7 +26,7 @@ export default function Section(props: Props) {
       id="Person"
       class="container py-10 flex flex-col h-screen w-full items-center justify-center gap-16"
     >
-      <p>{ (props.rs as ResultSet).rows.map((row:Row) => {row})}</p>
+      <p>{ (props.rs as ResultSet).rows.map( (row:Row) => {row} ) }</p>
     </div>
   );
 }
