@@ -27,8 +27,8 @@ export default async function loader(props: Props,_req: Request,): Promise<rs>
     const retorno = await turso.execute({sql: "SELECT * FROM person where id=?", args: [props.id ?? 1]});
     erro = retorno;
     return (
-      action(retorno)
-    );      
+      retorno
+    );
   } catch (error) {
     console.error(`\nErro ao acessar o banco de dados: ${env["TURSO_DATABASE_URL"]}\n${error}\n${erro}`)
   }
