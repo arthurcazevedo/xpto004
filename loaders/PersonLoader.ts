@@ -1,6 +1,6 @@
 import { ResultSet, createClient }  from "https://esm.sh/@libsql/client@0.7.0";
 import { load }                     from "https://deno.land/std@0.224.0/dotenv/mod.ts";
-import  action                      from "site/actions/PersonTransform.ts"
+//import  action                      from "site/actions/PersonTransform.ts"
 
 export type rs = ResultSet;
 
