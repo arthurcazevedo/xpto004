@@ -1,4 +1,4 @@
-# Landing — deco.cx templaProjeto xpto004te 
+# Landing — deco.cx templaProjeto xpto004
 
 Tentando fazer um loader/section que funcione!
 
