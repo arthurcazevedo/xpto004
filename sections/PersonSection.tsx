@@ -7,7 +7,7 @@ export interface Props {
    * @description id of the profile.
    * @default 1
    */
-  id?: string;
+  //id?: string;
   /**
    * @format structure of lists
    * @description profiles.
@@ -16,9 +16,9 @@ export interface Props {
   rs?: RS;
 }
 
-export default function Section({id, rs}: Props) {
+export default function Section({ rs}: Props) {
 
-  if (rs === undefined || id === undefined) {
+  if (rs === undefined ) {
     return <p>Você deve fornecer um id de um perfil</p>
   }
   return (
