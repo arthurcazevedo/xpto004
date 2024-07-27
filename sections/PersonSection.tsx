@@ -1,4 +1,4 @@
-import { ResultSet }      from "https://esm.sh/@libsql/client@0.6.0/web";
+import { ResultSet, Row }      from "https://esm.sh/@libsql/client@0.6.0/web";
 import { rs as RS } from "site/loaders/PersonLoader.ts"
 
 export interface Props {
@@ -16,9 +16,9 @@ export interface Props {
   rs?: RS;
 }
 
-export default function Section({ rs}: Props) {
+export default function Section(props: Props) {
 
-  if (rs === undefined ) {
+  if (props.rs === undefined ) {
     return <p>Você deve fornecer um id de um perfil</p>
   }
   return (
@@ -26,7 +26,7 @@ export default function Section({ rs}: Props) {
       id="Person"
       class="container py-10 flex flex-col h-screen w-full items-center justify-center gap-16"
     >
-      <p>{ (rs as ResultSet).rows.map((row) => {row.GIVENNAME})}</p>
+      <p>{ (props.rs as ResultSet).rows.map((row:Row) => {row.GIVENNAME})}</p>
     </div>
   );
 }
